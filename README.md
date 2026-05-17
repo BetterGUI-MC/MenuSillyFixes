@@ -11,3 +11,4 @@ These fixes would eventually be removed if the issue is resolved effectively.
 
 * Sync the player inventory when closing the menus
   - This is the answer to [this issue](https://github.com/BetterGUI-MC/Issue-Tracker/issues/20)
+  - This would probably work in Survival Mode. In Creative Mode, the server always trusts the player inventory regardless of how buggy it is, so there is no fix for that.
