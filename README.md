@@ -5,6 +5,7 @@ An addon to fix some silly fixes when working with menus.
 ## Why calling it silly?
 
 This is my opinion of the fixes in this addon: It's silly and shouldn't exist in the first place. The issues this addon is trying to fix are either an oversight from Minecraft, a niche issue that doesn't even affect the server, or an issue that causes a bad standard for every GUI plugins.
+These fixes would eventually be removed if the issue is resolved effectively.
 
 ## Fixes
 
