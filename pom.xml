@@ -10,15 +10,15 @@
     <version>4.0</version>
   </parent>
 
-  <artifactId>ExampleAddon</artifactId>
+  <artifactId>MenuSillyFixes</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
 
-  <name>ExampleAddon</name>
-  <description>An Example addon for BetterGUI</description>
+  <name>MenuSillyFixes</name>
+  <description>Some silly/temporary fixes for some silly/temporary menu problems</description>
 
   <properties>
-    <project.mainClass>me.hsgamer.bettergui.exampleaddon.ExampleAddon</project.mainClass>
+    <project.mainClass>me.hsgamer.bettergui.menusillyfixes.MenuSillyFixes</project.mainClass>
   </properties>
 
   <repositories>
