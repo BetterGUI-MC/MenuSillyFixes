@@ -2,6 +2,7 @@ package me.hsgamer.bettergui.menusillyfixes.fix;
 
 import io.github.projectunified.minelib.plugin.base.Loadable;
 import me.hsgamer.bettergui.menusillyfixes.MenuSillyFixes;
+import me.hsgamer.bettergui.util.SchedulerUtil;
 import me.hsgamer.hscore.bukkit.gui.BukkitGUIDisplay;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.HumanEntity;
@@ -34,9 +35,11 @@ public class UpdateInventoryOnClose implements Loadable, Listener {
         Inventory inventory = event.getInventory();
         if (inventory.getHolder() instanceof BukkitGUIDisplay) {
             HumanEntity humanEntity = event.getPlayer();
-            if (humanEntity instanceof Player) {
-                ((Player) humanEntity).updateInventory();
-            }
+            SchedulerUtil.entity(humanEntity).run(() -> {
+                if (humanEntity instanceof Player) {
+                    ((Player) humanEntity).updateInventory();
+                }
+            });
         }
     }
 }
